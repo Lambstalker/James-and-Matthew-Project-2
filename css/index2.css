@@ -21,7 +21,7 @@ body {
     padding: 0;
     padding-bottom: 30px;
     display: flex;
-    justify-content: center; /* Add this line */
+    justify-content: center;
 }
 
 #navbar li {
@@ -90,8 +90,8 @@ p {
 
 #cont {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust minmax value as needed */
-    gap: 20px; /* Adjust the gap as needed */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .lower {
@@ -100,11 +100,11 @@ p {
 }
 
 main {
-    overflow: hidden; /* Hide overflow to prevent extra images from appearing */
-    margin-bottom: 50px; /* Add margin to create space for the button */
-    position: relative; /* Positioning for scroll button */
-    flex: 1; /* Make the main content container grow to fill the remaining space */
-    margin-top: 10px; /* Add margin to separate main content from navbar */
+    overflow: hidden; 
+    margin-bottom: 50px;
+    position: relative; 
+    flex: 1; 
+    margin-top: 10px; 
     padding-bottom: 50px;
 }
 
@@ -120,10 +120,9 @@ main {
     padding-bottom: 20px;
 }
 
-/* CSS for scroll button */
 #scrollButton {
     position: relative;
-    bottom: 10px; /* Adjust as needed */
+    bottom: 10px; 
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 20px;
@@ -149,7 +148,7 @@ main {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 10px; /* Add some top margin to separate it from the scroll button */
+    margin-top: 10px; 
 }
 
 #formButton:hover {
@@ -164,7 +163,7 @@ footer nav ul {
 
 footer nav ul li {
     display: inline;
-    margin-right: 20px; /* Add some spacing between the links */
+    margin-right: 20px; 
 }
 
 footer nav {
@@ -173,4 +172,15 @@ footer nav {
 
 .bold_text {
     font-weight: bold;
+}
+
+
+@media screen and (max-width: 600px) {
+    #cont {
+        display: block;
+    }
+    .lower {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
